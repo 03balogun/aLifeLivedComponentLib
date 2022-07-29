@@ -14,10 +14,13 @@ let avatar = 'https://picsum.photos/id/237/200/300';
 const setup = (
   isDisabled: boolean,
   mediaControlIcon: 'play' | 'pause',
-  mediaControlAction = mockOnAudioPlay
+  mediaControlAction = mockOnAudioPlay,
+  audioProgress = 0,
+  headPhonesConnected = false
 ) => {
   const utils = render(
     <MiniPlayer
+      audioProgress={audioProgress}
       isDisabled={isDisabled}
       title={title}
       username={username}
@@ -25,6 +28,7 @@ const setup = (
       mediaControlIcon={mediaControlIcon}
       mediaControlAction={mediaControlAction}
       onMiniPlayerPress={mockOnMiniPlayerPress}
+      isHeadphonesConnected={headPhonesConnected}
     />
   );
 
@@ -34,23 +38,33 @@ const setup = (
 };
 
 describe('component >> miniPlayer', () => {
-  describe('Mini player with NO profile image while NOT PLAYING', () => {
+  test('Should find title and username', () => {
+    const { getByText } = setup(false, 'play', mockOnAudioPlay);
+    expect(getByText(title)).not.toBeNull();
+    expect(getByText(username)).not.toBeNull();
+  });
+
+  test('Should find avatar id', () => {
+    const { getByTestId } = setup(false, 'play', mockOnAudioPlay);
+    expect(getByTestId('miniPlayer-avatar')).not.toBeNull();
+  });
+
+  describe('Given story has NO profile image', () => {
     beforeEach(() => (avatar = ''));
-    test('Should render component correctly NOT PLAYING', () => {
+    test('Should render default profile image', () => {
       const { toJSON } = setup(false, 'play', mockOnAudioPlay);
       expect(toJSON()).toMatchSnapshot();
     });
   });
 
-  describe('Mini player with NO profile image while PLAYING', () => {
-    beforeEach(() => (avatar = ''));
-    test('Should render component correctly NOT PLAYING', () => {
-      const { toJSON } = setup(false, 'pause', mockOnAudioPause);
-      expect(toJSON()).toMatchSnapshot();
+  describe('Given headphones are connected', () => {
+    test('Should show headphone icon', () => {
+      const { getByTestId } = setup(false, 'pause', mockOnAudioPlay, 0, true);
+      expect(getByTestId('headphone-test-id')).toBeDefined();
     });
   });
 
-  describe('Mini player NOT PLAYING', () => {
+  describe('Given mini player is PLAYING', () => {
     const mediaControlIcon = 'play';
     beforeEach(
       () => (
@@ -64,17 +78,6 @@ describe('component >> miniPlayer', () => {
     test('Should render component correctly', () => {
       const { toJSON } = setup(false, mediaControlIcon, mockOnAudioPlay);
       expect(toJSON()).toMatchSnapshot();
-    });
-
-    test('Should find title and username', () => {
-      const { getByText } = setup(false, mediaControlIcon, mockOnAudioPlay);
-      expect(getByText(title)).not.toBeNull();
-      expect(getByText(username)).not.toBeNull();
-    });
-
-    test('Should find avatar id', () => {
-      const { getByTestId } = setup(false, mediaControlIcon, mockOnAudioPlay);
-      expect(getByTestId('miniPlayer-avatar')).not.toBeNull();
     });
 
     test('Should fire onAudioPlay() action', () => {
@@ -94,7 +97,7 @@ describe('component >> miniPlayer', () => {
     });
   });
 
-  describe('Mini player PLAYING', () => {
+  describe('Given mini player is PAUSED', () => {
     beforeEach(
       () => (
         (avatar = 'https://picsum.photos/id/237/200/300'),
@@ -107,17 +110,6 @@ describe('component >> miniPlayer', () => {
     test('Should render component correctly', () => {
       const { toJSON } = setup(false, playerState, mockOnAudioPause);
       expect(toJSON()).toMatchSnapshot();
-    });
-
-    test('Should find title and username', () => {
-      const { getByText } = setup(false, playerState, mockOnAudioPause);
-      expect(getByText(title)).not.toBeNull();
-      expect(getByText(username)).not.toBeNull();
-    });
-
-    test('Should find avatar id', () => {
-      const { getByTestId } = setup(false, playerState, mockOnAudioPause);
-      expect(getByTestId('miniPlayer-avatar')).not.toBeNull();
     });
 
     test('Should fire onAudioPause() action', () => {
@@ -137,7 +129,7 @@ describe('component >> miniPlayer', () => {
     });
   });
 
-  describe('Mini player DISABLED and PLAYING', () => {
+  describe('Given mini player DISABLED and PLAYING', () => {
     beforeEach(
       () => (
         (avatar = 'https://picsum.photos/id/237/200/300'),
@@ -151,17 +143,6 @@ describe('component >> miniPlayer', () => {
     test('Should render component correctly', () => {
       const { toJSON } = setup(isDisabled, playerState);
       expect(toJSON()).toMatchSnapshot();
-    });
-
-    test('Should find title and username', () => {
-      const { getByText } = setup(isDisabled, playerState);
-      expect(getByText(title)).not.toBeNull();
-      expect(getByText(username)).not.toBeNull();
-    });
-
-    test('Should find avatar id', () => {
-      const { getByTestId } = setup(isDisabled, playerState);
-      expect(getByTestId('miniPlayer-avatar')).not.toBeNull();
     });
 
     test('Should NOT fire onAudioPause() action', () => {
@@ -181,7 +162,7 @@ describe('component >> miniPlayer', () => {
     });
   });
 
-  describe('Mini player DISABLED and NOT PLAYING', () => {
+  describe('Given mini player DISABLED and NOT PLAYING', () => {
     beforeEach(
       () => (
         (avatar = 'https://picsum.photos/id/237/200/300'),

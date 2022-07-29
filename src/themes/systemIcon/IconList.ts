@@ -33,6 +33,7 @@ import {
   faArrowAltCircleRight,
   faLock,
   faGlobeAmericas,
+  faHeadphones,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faBookmark as farBookmark,
@@ -69,6 +70,7 @@ export const iconList = {
   faPause,
   faTimes,
   faHeart,
+  faHeadphones,
   faSearch,
   faBookmark,
   faExclamationCircle,

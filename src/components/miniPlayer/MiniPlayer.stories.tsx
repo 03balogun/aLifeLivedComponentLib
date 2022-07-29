@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
-import { text, boolean, select } from '@storybook/addon-knobs';
+import { text, boolean, select, number } from '@storybook/addon-knobs';
 
 // Component
 import { MiniPlayer } from './MiniPlayer';
@@ -17,6 +17,8 @@ storiesOf('MiniPlayer', module)
   ))
   .add('Default', () => (
     <MiniPlayer
+      isHeadphonesConnected={boolean('Headphones connected', true)}
+      audioProgress={number('Recording progress', 50)}
       isDisabled={boolean('Disabled', false)}
       title={text('Title', 'This is an story title')}
       username={text('Username', 'test_username')}
