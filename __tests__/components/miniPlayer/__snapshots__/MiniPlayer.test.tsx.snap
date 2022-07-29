@@ -134,6 +134,7 @@ exports[`component >> miniPlayer Given mini player DISABLED and NOT PLAYING Shou
               "alignItems": "center",
               "display": "flex",
               "flexDirection": "row",
+              "width": "65%",
             },
             Array [
               Object {},
@@ -454,6 +455,7 @@ exports[`component >> miniPlayer Given mini player DISABLED and PLAYING Should r
               "alignItems": "center",
               "display": "flex",
               "flexDirection": "row",
+              "width": "65%",
             },
             Array [
               Object {},
@@ -774,6 +776,7 @@ exports[`component >> miniPlayer Given mini player is PAUSED Should render compo
               "alignItems": "center",
               "display": "flex",
               "flexDirection": "row",
+              "width": "65%",
             },
             Array [
               Object {},
@@ -1094,6 +1097,7 @@ exports[`component >> miniPlayer Given mini player is PLAYING Should render comp
               "alignItems": "center",
               "display": "flex",
               "flexDirection": "row",
+              "width": "65%",
             },
             Array [
               Object {},
@@ -1414,6 +1418,7 @@ exports[`component >> miniPlayer Given story has NO profile image Should render 
               "alignItems": "center",
               "display": "flex",
               "flexDirection": "row",
+              "width": "65%",
             },
             Array [
               Object {},

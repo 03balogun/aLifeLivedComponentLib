@@ -83,7 +83,12 @@ export const MiniPlayer: React.FC<MiniPlayerTypes> = ({
           paddingHorizontal="s"
           paddingTop="s"
         >
-          <Box flexDirection="row" alignContent="center" alignItems="center">
+          <Box
+            flexDirection="row"
+            alignContent="center"
+            alignItems="center"
+            width="65%"
+          >
             <Avatar
               source={{ uri: avatar, priority: 'normal' }}
               variant="roundAvatar"
