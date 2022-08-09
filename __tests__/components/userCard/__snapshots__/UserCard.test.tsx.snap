@@ -107,8 +107,7 @@ exports[`components >> user card  UserCard with profile image Should render user
                 "color": "#282828",
                 "display": "flex",
                 "fontFamily": "SFUIDisplay-Regular",
-                "fontSize": 18,
-                "lineHeight": 20,
+                "fontSize": 35,
               },
             ]
           }
@@ -304,8 +303,7 @@ exports[`components >> user card  UserCard without profile image Should render u
                 "color": "#282828",
                 "display": "flex",
                 "fontFamily": "SFUIDisplay-Regular",
-                "fontSize": 18,
-                "lineHeight": 20,
+                "fontSize": 35,
               },
             ]
           }

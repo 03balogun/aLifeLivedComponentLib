@@ -1,8 +1,9 @@
 import React, { useMemo, useRef } from 'react';
+import { RFValue } from 'react-native-responsive-fontsize';
+import AnimatedLottieView from 'lottie-react-native';
 import { TouchableWithoutFeedback } from 'react-native';
 import { SystemAnimatedLottieBox } from '../../themes/systemAnimatedLottieBox/SystemAnimatedLottieBox';
 import { Loader } from '../loader/Loader';
-import AnimatedLottieView from 'lottie-react-native';
 
 // UI
 import { Box } from '../../themes/box/Box';
@@ -36,11 +37,11 @@ export const RecorderButton: React.FC<RecorderButtonProps> = ({
 
   return isLoading ? (
     <Box
-      width={110}
-      height={110}
       alignContent="center"
       alignItems="center"
       justifyContent="center"
+      width={RFValue(100)}
+      height={RFValue(100)}
     >
       <Loader testID={loaderTestID} />
     </Box>
@@ -55,8 +56,8 @@ export const RecorderButton: React.FC<RecorderButtonProps> = ({
         source={require('../../assets/lottie/record-button.json')}
         loop={false}
         autoPlay={false}
-        width={115}
-        height={115}
+        width={RFValue(100)}
+        height={RFValue(100)}
       />
     </TouchableWithoutFeedback>
   );

@@ -51,8 +51,7 @@ exports[`src >> components >> faqCard Given container IS open Should match snaps
             "color": "#282828",
             "display": "flex",
             "fontFamily": "SFUIText-Regular",
-            "fontSize": 20,
-            "lineHeight": 24,
+            "fontSize": 39,
           },
         ]
       }
@@ -132,8 +131,7 @@ exports[`src >> components >> faqCard Given container IS open Should match snaps
             "color": "#282828",
             "display": "flex",
             "fontFamily": "SFUIDisplay-Regular",
-            "fontSize": 16,
-            "lineHeight": 20,
+            "fontSize": 31,
           },
         ]
       }
@@ -195,8 +193,7 @@ exports[`src >> components >> faqCard Given container is NOT open Should match s
             "color": "#282828",
             "display": "flex",
             "fontFamily": "SFUIText-Regular",
-            "fontSize": 20,
-            "lineHeight": 24,
+            "fontSize": 39,
           },
         ]
       }

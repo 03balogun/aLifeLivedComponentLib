@@ -145,8 +145,7 @@ exports[`src >> components >> myRecordingCard Given a user is listening back to 
               "color": "#282828",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 18,
-              "lineHeight": 20,
+              "fontSize": 35,
             },
           ]
         }
@@ -366,8 +365,7 @@ exports[`src >> components >> myRecordingCard Given a user is listening back to 
               "color": "#282828",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 18,
-              "lineHeight": 20,
+              "fontSize": 35,
             },
           ]
         }
@@ -587,8 +585,7 @@ exports[`src >> components >> myRecordingCard Given a user is listening back to 
               "color": "#282828",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 18,
-              "lineHeight": 20,
+              "fontSize": 35,
             },
           ]
         }

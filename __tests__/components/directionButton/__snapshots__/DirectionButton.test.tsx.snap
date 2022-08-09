@@ -119,8 +119,7 @@ exports[`components >> directionButton  Given direction button has a left icon S
               "color": "#282828",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 18,
-              "lineHeight": 20,
+              "fontSize": 35,
               "textAlign": "center",
             },
           ]
@@ -262,8 +261,7 @@ exports[`components >> directionButton  Given direction button is enabled Should
               "color": "#282828",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 18,
-              "lineHeight": 20,
+              "fontSize": 35,
               "textAlign": "center",
             },
           ]

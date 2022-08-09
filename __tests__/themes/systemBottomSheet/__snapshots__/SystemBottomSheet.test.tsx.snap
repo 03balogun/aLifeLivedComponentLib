@@ -86,8 +86,7 @@ exports[`themes >> systemBottomSheet Should render systemBottomSheet box with no
                 "color": "#282828",
                 "display": "flex",
                 "fontFamily": "SFUIText-Semibold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 31,
                 "textAlign": "center",
               },
             ]
@@ -196,8 +195,7 @@ exports[`themes >> systemBottomSheet Should render systemBottomSheet with childr
                 "color": "#282828",
                 "display": "flex",
                 "fontFamily": "SFUIText-Semibold",
-                "fontSize": 16,
-                "lineHeight": 24,
+                "fontSize": 31,
                 "textAlign": "center",
               },
             ]

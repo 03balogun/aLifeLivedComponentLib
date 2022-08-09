@@ -34,8 +34,7 @@ exports[`components >> button  Disabled button Should render basic button correc
           "color": "#282828",
           "display": "flex",
           "fontFamily": "SFUIText-Semibold",
-          "fontSize": 16,
-          "lineHeight": 24,
+          "fontSize": 31,
           "textAlign": "center",
         },
       ]
@@ -80,8 +79,7 @@ exports[`components >> button  Enabled button Should render basic button correct
           "color": "#282828",
           "display": "flex",
           "fontFamily": "SFUIText-Semibold",
-          "fontSize": 16,
-          "lineHeight": 24,
+          "fontSize": 31,
           "textAlign": "center",
         },
       ]

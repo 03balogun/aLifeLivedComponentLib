@@ -17,6 +17,8 @@ const RecorderButtonComponent = () => {
       backgroundColor="white"
     >
       <RecorderButton
+        isRecordingPaused={false}
+        isLoading={false}
         isRecording={isRecording}
         onRecorderPress={() => setIsRecording(!isRecording)}
       />

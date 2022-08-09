@@ -15,10 +15,7 @@ import SessionChecklistSVG from './assets/svg/session-checklist.svg';
 import LoadingAnimation from './assets/lottie/loading.json';
 
 // Components
-import { HelpCard } from './components/helpCard/HelpCard';
 import { ThemeProvider } from './themes/ThemeProvider';
-import { RecordingTimer } from './components/recordingTimer/RecordingTimer';
-import { NoCtaModal } from './components/noCtaModal/NoCtaModal';
 import { EditAndDeleteBottomSheet } from './components/editAndDeleteBottomSheet/EditAndDeleteBottomSheet';
 import { Icon } from './components/icon/Icon';
 import { StoryCard } from './components/storyCard/StoryCard';
@@ -80,13 +77,10 @@ export {
   Icon,
   MiniPlayer,
   BlurLayout,
-  HelpCard,
   ThemeProvider,
   Box,
   Text,
-  RecordingTimer,
   TopicCard,
-  NoCtaModal,
   EditAndDeleteBottomSheet,
   DraftStoryCard,
   ThemeCard,

@@ -1,4 +1,5 @@
 import React from 'react';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 // Components
 import { RecorderButton } from '../recorderButton/RecorderButton';
@@ -50,7 +51,7 @@ export const RecorderActionBar: React.FC<RecorderActionBarProps> = ({
       >
         <Icon
           icon={isIdeal ? 'folder' : ['far', 'trash-alt']}
-          size={30}
+          size={RFValue(30)}
           color="primary"
         />
       </SystemPressable>
@@ -67,7 +68,11 @@ export const RecorderActionBar: React.FC<RecorderActionBarProps> = ({
         testID={rightIconTestID}
         disabled={isLoading}
       >
-        <Icon icon={isIdeal ? 'cog' : 'check'} size={30} color="primary" />
+        <Icon
+          icon={isIdeal ? 'cog' : 'check'}
+          size={RFValue(30)}
+          color="primary"
+        />
       </SystemPressable>
     </Box>
   );
