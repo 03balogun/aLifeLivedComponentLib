@@ -1,6 +1,5 @@
 import React from 'react';
 import ProgressBar from 'react-native-animated-progress';
-import { RFValue } from 'react-native-responsive-fontsize';
 
 // UI
 import { Box } from '../../themes/box/Box';
@@ -59,7 +58,7 @@ export const DraftStoryCard: React.FC<DraftStoryCardProps> = ({
             borderRadius="large"
             testID="pencil-icon"
           >
-            <Icon icon="pencil-alt" color="primary" size={RFValue(10)} />
+            <Icon icon="pencil-alt" color="primary" size={10} />
           </Box>
           <Box>
             <Text color="textContrastHigh" variant="intro" numberOfLines={1}>

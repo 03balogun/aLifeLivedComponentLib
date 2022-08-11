@@ -1,6 +1,5 @@
 import { createText, ResponsiveValue } from '@shopify/restyle';
 import { ColorThemeTokens } from '../palette';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { Theme } from '../theme';
 import { ValueOf } from '../../ts/utils';
 
@@ -31,47 +30,47 @@ type TextVariant = {
 
 export const textVariants: Record<TextVariantToken, TextVariant> = {
   h1: {
-    fontSize: RFValue(52),
+    fontSize: 52,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiTextBold,
   },
   h2: {
-    fontSize: RFValue(32),
+    fontSize: 32,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiTextBold,
   },
   h3: {
-    fontSize: RFValue(24),
+    fontSize: 24,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiTextBold,
   },
   h4: {
-    fontSize: RFValue(20),
+    fontSize: 20,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiTextRegular,
   },
   intro: {
-    fontSize: RFValue(16),
+    fontSize: 16,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiTextSemiBold,
   },
   body: {
-    fontSize: RFValue(18),
+    fontSize: 18,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiDisplayRegular,
   },
   bodySmall: {
-    fontSize: RFValue(16),
+    fontSize: 16,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiDisplayRegular,
   },
   bodyXSmall: {
-    fontSize: RFValue(14),
+    fontSize: 14,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiDisplayRegular,
   },
   bodyXXSmall: {
-    fontSize: RFValue(12),
+    fontSize: 12,
     color: 'textContrastHigh',
     fontFamily: FontFamilies.sfUiDisplayRegular,
   },

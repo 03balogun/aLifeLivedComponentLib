@@ -68,7 +68,7 @@ exports[`components >> theme card  Should match snapshot correctly 1`] = `
                 "color": "#282828",
                 "display": "flex",
                 "fontFamily": "SFUIText-Regular",
-                "fontSize": 39,
+                "fontSize": 20,
               },
             ]
           }
@@ -102,8 +102,8 @@ exports[`components >> theme card  Should match snapshot correctly 1`] = `
               Object {
                 "borderBottomLeftRadius": 8,
                 "borderTopLeftRadius": 8,
-                "height": 196,
-                "width": 196,
+                "height": 100,
+                "width": 100,
               },
             ],
           ]

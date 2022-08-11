@@ -10,8 +10,8 @@ exports[`src >> components >> loader Should match snapshot 1`] = `
       undefined,
       Array [
         Object {
-          "height": 98,
-          "width": 98,
+          "height": 50,
+          "width": 50,
         },
       ],
     ]
@@ -33,8 +33,8 @@ exports[`src >> components >> loader Should match snapshot 1`] = `
     style={
       Object {
         "aspectRatio": 1,
-        "height": 98,
-        "width": 98,
+        "height": 50,
+        "width": 50,
       }
     }
   />

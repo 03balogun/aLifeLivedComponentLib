@@ -1,5 +1,4 @@
 import React from 'react';
-import { RFValue } from 'react-native-responsive-fontsize';
 
 // UI
 import { Box } from '../../themes/box/Box';
@@ -108,11 +107,11 @@ export const StoryCard: React.FC<StoryCardProps> = ({
           <Avatar
             source={{ uri: story.avatar, priority: 'normal' }}
             variant="roundAvatar"
-            width={RFValue(30)}
-            height={RFValue(30)}
-            iconSize={RFValue(20)}
-            iconWidth={RFValue(30)}
-            iconHeight={RFValue(30)}
+            width={30}
+            height={30}
+            iconSize={20}
+            iconWidth={30}
+            iconHeight={30}
           />
           <Icon
             icon={[hasUserBookmarkedStory ? 'fas' : 'far', 'bookmark']}
@@ -120,7 +119,7 @@ export const StoryCard: React.FC<StoryCardProps> = ({
             color="primaryContrast"
             testID="story-card-bookmark-icon"
             onPress={onBookmarkPress}
-            size={RFValue(10)}
+            size={10}
           />
         </Box>
       </Box>

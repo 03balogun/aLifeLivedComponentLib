@@ -46,7 +46,7 @@ exports[`src >> themes >> card Should match snapshot 1`] = `
           "color": "#F1ECE5",
           "display": "flex",
           "fontFamily": "SFUIText-Regular",
-          "fontSize": 39,
+          "fontSize": 20,
           "textAlign": "center",
         },
       ]

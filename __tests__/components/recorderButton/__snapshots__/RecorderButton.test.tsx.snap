@@ -8,9 +8,9 @@ exports[`Components >> RecorderButton Given user IS recording AND app IS loading
         "alignContent": "center",
         "alignItems": "center",
         "display": "flex",
-        "height": 196,
+        "height": 100,
         "justifyContent": "center",
-        "width": 196,
+        "width": 100,
       },
       Array [
         Object {},
@@ -27,8 +27,8 @@ exports[`Components >> RecorderButton Given user IS recording AND app IS loading
         undefined,
         Array [
           Object {
-            "height": 98,
-            "width": 98,
+            "height": 50,
+            "width": 50,
           },
         ],
       ]
@@ -50,8 +50,8 @@ exports[`Components >> RecorderButton Given user IS recording AND app IS loading
       style={
         Object {
           "aspectRatio": 1,
-          "height": 98,
-          "width": 98,
+          "height": 50,
+          "width": 50,
         }
       }
       testID="loader-test-id"
@@ -70,8 +70,8 @@ exports[`Components >> RecorderButton Given user IS recording AND app is NOT loa
       undefined,
       Array [
         Object {
-          "height": 196,
-          "width": 196,
+          "height": 100,
+          "width": 100,
         },
       ],
     ]
@@ -107,8 +107,8 @@ exports[`Components >> RecorderButton Given user IS recording AND app is NOT loa
     style={
       Object {
         "aspectRatio": 1,
-        "height": 196,
-        "width": 196,
+        "height": 100,
+        "width": 100,
       }
     }
     testID="recorder-test-id"
@@ -126,8 +126,8 @@ exports[`Components >> RecorderButton Given user is NOT recording AND app is NOT
       undefined,
       Array [
         Object {
-          "height": 196,
-          "width": 196,
+          "height": 100,
+          "width": 100,
         },
       ],
     ]
@@ -163,8 +163,8 @@ exports[`Components >> RecorderButton Given user is NOT recording AND app is NOT
     style={
       Object {
         "aspectRatio": 1,
-        "height": 196,
-        "width": 196,
+        "height": 100,
+        "width": 100,
       }
     }
     testID="recorder-test-id"

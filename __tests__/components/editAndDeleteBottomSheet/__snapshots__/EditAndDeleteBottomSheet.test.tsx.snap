@@ -101,7 +101,7 @@ exports[`components >> EditAndDeleteBottomSheet Bottom sheet visible Should rend
                   "color": "#282828",
                   "display": "flex",
                   "fontFamily": "SFUIText-Semibold",
-                  "fontSize": 31,
+                  "fontSize": 16,
                   "textAlign": "center",
                 },
               ]
@@ -153,7 +153,7 @@ exports[`components >> EditAndDeleteBottomSheet Bottom sheet visible Should rend
                   "color": "#282828",
                   "display": "flex",
                   "fontFamily": "SFUIText-Semibold",
-                  "fontSize": 31,
+                  "fontSize": 16,
                   "textAlign": "center",
                 },
               ]
@@ -207,7 +207,7 @@ exports[`components >> EditAndDeleteBottomSheet Bottom sheet visible Should rend
                 "color": "#282828",
                 "display": "flex",
                 "fontFamily": "SFUIText-Semibold",
-                "fontSize": 31,
+                "fontSize": 16,
                 "textAlign": "center",
               },
             ]

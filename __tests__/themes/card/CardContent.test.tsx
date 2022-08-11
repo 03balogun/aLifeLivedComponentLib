@@ -6,7 +6,6 @@ import COVIDThemeSVG from '../../../src/assets/svg/covid-theme.svg';
 const setup = () => render(<CardContent SVG={<COVIDThemeSVG />} />);
 describe('src >> themes >> card', () => {
   test('Should match snapshot and render SVG', () => {
-    console.debug(COVIDThemeSVG);
     const { toJSON } = setup();
     expect(toJSON()).toMatchSnapshot();
   });

@@ -17,7 +17,6 @@ import { CardOverlay } from './CardOverlay';
 // UI
 import { Box } from '../box/Box';
 import { SystemScrollView } from '../systemScrollView/SystemScrollView';
-import { RFValue } from 'react-native-responsive-fontsize';
 
 storiesOf('Cards', module)
   .addDecorator(Story => Story())
@@ -96,9 +95,7 @@ storiesOf('Cards', module)
             onPress={() => console.log('press')}
             backgroundColor="secondaryOverlay"
           >
-            <CardContent
-              SVG={<MyStoriesSVG height={RFValue(150)} width={RFValue(150)} />}
-            />
+            <CardContent SVG={<MyStoriesSVG height={150} width={150} />} />
             <CardOverlay title="School years" />
           </CardContainer>
         </Box>
@@ -107,9 +104,7 @@ storiesOf('Cards', module)
             onPress={() => console.log('press')}
             backgroundColor="secondaryOverlay"
           >
-            <CardContent
-              SVG={<DraftsSVG height={RFValue(150)} width={RFValue(150)} />}
-            />
+            <CardContent SVG={<DraftsSVG height={150} width={150} />} />
             <CardOverlay title="Early life" />
           </CardContainer>
         </Box>
@@ -119,11 +114,7 @@ storiesOf('Cards', module)
             onPress={() => console.log('press')}
             backgroundColor="secondaryOverlay"
           >
-            <CardContent
-              SVG={
-                <TravelThemeSVG height={RFValue(150)} width={RFValue(150)} />
-              }
-            />
+            <CardContent SVG={<TravelThemeSVG height={150} width={150} />} />
             <CardOverlay title="School years" />
           </CardContainer>
         </Box>
@@ -133,9 +124,7 @@ storiesOf('Cards', module)
             onPress={() => console.log('press')}
             backgroundColor="secondaryOverlay"
           >
-            <CardContent
-              SVG={<COVIDThemeSVG height={RFValue(150)} width={RFValue(150)} />}
-            />
+            <CardContent SVG={<COVIDThemeSVG height={150} width={150} />} />
             <CardOverlay title="Sports" />
           </CardContainer>
         </Box>
@@ -145,9 +134,7 @@ storiesOf('Cards', module)
             onPress={() => console.log('press')}
             backgroundColor="secondaryOverlay"
           >
-            <CardContent
-              SVG={<LifeStorySVG height={RFValue(150)} width={RFValue(150)} />}
-            />
+            <CardContent SVG={<LifeStorySVG height={150} width={150} />} />
           </CardContainer>
         </Box>
       </Box>

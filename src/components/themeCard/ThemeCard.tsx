@@ -1,5 +1,4 @@
 import React from 'react';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { SystemImage } from '../../themes/systemImage/SystemImage';
 import { CardContainer } from '../../themes/card/CardContainer';
 import { CardHeader } from '../../themes/card/CardHeader';
@@ -29,8 +28,8 @@ export const ThemeCard: React.FC<ThemeCardProps> = ({
           <SystemImage
             source={{ uri: imageUrl, priority: 'high' }}
             resizeMode="cover"
-            width={RFValue(100)}
-            height={RFValue(100)}
+            width={100}
+            height={100}
             borderTopLeftRadius="medium"
             borderBottomLeftRadius="medium"
           />

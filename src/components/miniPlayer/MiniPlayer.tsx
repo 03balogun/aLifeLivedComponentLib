@@ -11,7 +11,6 @@ import { SystemButton } from '../../themes/systemButton/SystemButton';
 import { BlurLayout } from '../../themes/systemBlurLayout/SystemBlurLayout';
 import { Text } from '../../themes/text/Text';
 import { useTheme } from '../../themes/hooks/useTheme';
-import { RFValue } from 'react-native-responsive-fontsize';
 
 type MiniPlayerTypes = {
   isDisabled: boolean;
@@ -93,8 +92,8 @@ export const MiniPlayer: React.FC<MiniPlayerTypes> = ({
             <Avatar
               source={{ uri: avatar, priority: 'normal' }}
               variant="roundAvatar"
-              height={RFValue(40)}
-              width={RFValue(40)}
+              height={40}
+              width={40}
               testID="miniPlayer-avatar"
             />
             <Box marginLeft="m">
@@ -112,7 +111,7 @@ export const MiniPlayer: React.FC<MiniPlayerTypes> = ({
               <Icon
                 icon="headphones"
                 color="primary"
-                size={RFValue(20)}
+                size={20}
                 marginRight="m"
                 testID="headphone-test-id"
               />
@@ -125,7 +124,7 @@ export const MiniPlayer: React.FC<MiniPlayerTypes> = ({
             >
               <Icon
                 icon={mediaControlIcon}
-                size={RFValue(20)}
+                size={20}
                 color="white"
                 testID="mediaControl-icon"
               />

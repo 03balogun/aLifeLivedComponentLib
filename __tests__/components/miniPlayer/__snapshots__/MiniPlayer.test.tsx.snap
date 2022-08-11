@@ -151,8 +151,8 @@ exports[`component >> miniPlayer Given mini player DISABLED and NOT PLAYING Shou
               Array [
                 Object {
                   "borderRadius": 96,
-                  "height": 78,
-                  "width": 78,
+                  "height": 40,
+                  "width": 40,
                 },
               ],
             ]
@@ -199,7 +199,7 @@ exports[`component >> miniPlayer Given mini player DISABLED and NOT PLAYING Shou
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 35,
+                  "fontSize": 18,
                 },
               ]
             }
@@ -213,7 +213,7 @@ exports[`component >> miniPlayer Given mini player DISABLED and NOT PLAYING Shou
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 31,
+                  "fontSize": 16,
                   "marginTop": 8,
                 },
               ]
@@ -261,17 +261,17 @@ exports[`component >> miniPlayer Given mini player DISABLED and NOT PLAYING Shou
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={39}
-            bbWidth={39}
+            bbHeight={20}
+            bbWidth={20}
             fill="#ffffff"
             focusable={false}
-            height={39}
+            height={20}
             meetOrSlice={0}
             minX={0}
             minY={0}
             secondaryFill={null}
             secondaryOpacity={0.4}
-            size={39}
+            size={20}
             style={
               Array [
                 Object {
@@ -281,15 +281,15 @@ exports[`component >> miniPlayer Given mini player DISABLED and NOT PLAYING Shou
                 Object {},
                 Object {
                   "flex": 0,
-                  "height": 39,
-                  "width": 39,
+                  "height": 20,
+                  "width": 20,
                 },
               ]
             }
             testID="mediaControl-icon"
             vbHeight={512}
             vbWidth={448}
-            width={39}
+            width={20}
           >
             <RNSVGGroup
               fill={4294967295}
@@ -470,8 +470,8 @@ exports[`component >> miniPlayer Given mini player DISABLED and PLAYING Should r
               Array [
                 Object {
                   "borderRadius": 96,
-                  "height": 78,
-                  "width": 78,
+                  "height": 40,
+                  "width": 40,
                 },
               ],
             ]
@@ -518,7 +518,7 @@ exports[`component >> miniPlayer Given mini player DISABLED and PLAYING Should r
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 35,
+                  "fontSize": 18,
                 },
               ]
             }
@@ -532,7 +532,7 @@ exports[`component >> miniPlayer Given mini player DISABLED and PLAYING Should r
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 31,
+                  "fontSize": 16,
                   "marginTop": 8,
                 },
               ]
@@ -580,17 +580,17 @@ exports[`component >> miniPlayer Given mini player DISABLED and PLAYING Should r
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={39}
-            bbWidth={39}
+            bbHeight={20}
+            bbWidth={20}
             fill="#ffffff"
             focusable={false}
-            height={39}
+            height={20}
             meetOrSlice={0}
             minX={0}
             minY={0}
             secondaryFill={null}
             secondaryOpacity={0.4}
-            size={39}
+            size={20}
             style={
               Array [
                 Object {
@@ -600,15 +600,15 @@ exports[`component >> miniPlayer Given mini player DISABLED and PLAYING Should r
                 Object {},
                 Object {
                   "flex": 0,
-                  "height": 39,
-                  "width": 39,
+                  "height": 20,
+                  "width": 20,
                 },
               ]
             }
             testID="mediaControl-icon"
             vbHeight={512}
             vbWidth={448}
-            width={39}
+            width={20}
           >
             <RNSVGGroup
               fill={4294967295}
@@ -789,8 +789,8 @@ exports[`component >> miniPlayer Given mini player is PAUSED Should render compo
               Array [
                 Object {
                   "borderRadius": 96,
-                  "height": 78,
-                  "width": 78,
+                  "height": 40,
+                  "width": 40,
                 },
               ],
             ]
@@ -837,7 +837,7 @@ exports[`component >> miniPlayer Given mini player is PAUSED Should render compo
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 35,
+                  "fontSize": 18,
                 },
               ]
             }
@@ -851,7 +851,7 @@ exports[`component >> miniPlayer Given mini player is PAUSED Should render compo
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 31,
+                  "fontSize": 16,
                   "marginTop": 8,
                 },
               ]
@@ -899,17 +899,17 @@ exports[`component >> miniPlayer Given mini player is PAUSED Should render compo
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={39}
-            bbWidth={39}
+            bbHeight={20}
+            bbWidth={20}
             fill="#ffffff"
             focusable={false}
-            height={39}
+            height={20}
             meetOrSlice={0}
             minX={0}
             minY={0}
             secondaryFill={null}
             secondaryOpacity={0.4}
-            size={39}
+            size={20}
             style={
               Array [
                 Object {
@@ -919,15 +919,15 @@ exports[`component >> miniPlayer Given mini player is PAUSED Should render compo
                 Object {},
                 Object {
                   "flex": 0,
-                  "height": 39,
-                  "width": 39,
+                  "height": 20,
+                  "width": 20,
                 },
               ]
             }
             testID="mediaControl-icon"
             vbHeight={512}
             vbWidth={448}
-            width={39}
+            width={20}
           >
             <RNSVGGroup
               fill={4294967295}
@@ -1108,8 +1108,8 @@ exports[`component >> miniPlayer Given mini player is PLAYING Should render comp
               Array [
                 Object {
                   "borderRadius": 96,
-                  "height": 78,
-                  "width": 78,
+                  "height": 40,
+                  "width": 40,
                 },
               ],
             ]
@@ -1156,7 +1156,7 @@ exports[`component >> miniPlayer Given mini player is PLAYING Should render comp
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 35,
+                  "fontSize": 18,
                 },
               ]
             }
@@ -1170,7 +1170,7 @@ exports[`component >> miniPlayer Given mini player is PLAYING Should render comp
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 31,
+                  "fontSize": 16,
                   "marginTop": 8,
                 },
               ]
@@ -1218,17 +1218,17 @@ exports[`component >> miniPlayer Given mini player is PLAYING Should render comp
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={39}
-            bbWidth={39}
+            bbHeight={20}
+            bbWidth={20}
             fill="#ffffff"
             focusable={false}
-            height={39}
+            height={20}
             meetOrSlice={0}
             minX={0}
             minY={0}
             secondaryFill={null}
             secondaryOpacity={0.4}
-            size={39}
+            size={20}
             style={
               Array [
                 Object {
@@ -1238,15 +1238,15 @@ exports[`component >> miniPlayer Given mini player is PLAYING Should render comp
                 Object {},
                 Object {
                   "flex": 0,
-                  "height": 39,
-                  "width": 39,
+                  "height": 20,
+                  "width": 20,
                 },
               ]
             }
             testID="mediaControl-icon"
             vbHeight={512}
             vbWidth={448}
-            width={39}
+            width={20}
           >
             <RNSVGGroup
               fill={4294967295}
@@ -1426,10 +1426,10 @@ exports[`component >> miniPlayer Given story has NO profile image Should render 
                 "borderRadius": 96,
                 "borderWidth": 1,
                 "display": "flex",
-                "height": 78,
+                "height": 40,
                 "justifyContent": "center",
                 "padding": 16,
-                "width": 78,
+                "width": 40,
               },
               Array [
                 Object {},
@@ -1511,7 +1511,7 @@ exports[`component >> miniPlayer Given story has NO profile image Should render 
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 35,
+                  "fontSize": 18,
                 },
               ]
             }
@@ -1525,7 +1525,7 @@ exports[`component >> miniPlayer Given story has NO profile image Should render 
                   "color": "#ffffff",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 31,
+                  "fontSize": 16,
                   "marginTop": 8,
                 },
               ]
@@ -1573,17 +1573,17 @@ exports[`component >> miniPlayer Given story has NO profile image Should render 
         >
           <RNSVGSvgView
             align="xMidYMid"
-            bbHeight={39}
-            bbWidth={39}
+            bbHeight={20}
+            bbWidth={20}
             fill="#ffffff"
             focusable={false}
-            height={39}
+            height={20}
             meetOrSlice={0}
             minX={0}
             minY={0}
             secondaryFill={null}
             secondaryOpacity={0.4}
-            size={39}
+            size={20}
             style={
               Array [
                 Object {
@@ -1593,15 +1593,15 @@ exports[`component >> miniPlayer Given story has NO profile image Should render 
                 Object {},
                 Object {
                   "flex": 0,
-                  "height": 39,
-                  "width": 39,
+                  "height": 20,
+                  "width": 20,
                 },
               ]
             }
             testID="mediaControl-icon"
             vbHeight={512}
             vbWidth={448}
-            width={39}
+            width={20}
           >
             <RNSVGGroup
               fill={4294967295}

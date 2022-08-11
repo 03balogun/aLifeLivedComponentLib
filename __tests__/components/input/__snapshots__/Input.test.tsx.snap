@@ -29,7 +29,7 @@ exports[`component >> Input Given input has variant ERROR Should match snapshot 
           "color": "#282828",
           "display": "flex",
           "fontFamily": "SFUIDisplay-Regular",
-          "fontSize": 35,
+          "fontSize": 18,
           "marginBottom": 8,
         },
       ]
@@ -196,7 +196,7 @@ exports[`component >> Input Given input has variant SUCCESS Should match snapsho
           "color": "#282828",
           "display": "flex",
           "fontFamily": "SFUIDisplay-Regular",
-          "fontSize": 35,
+          "fontSize": 18,
           "marginBottom": 8,
         },
       ]
@@ -442,7 +442,7 @@ exports[`component >> Input Given input has variant of default Given input has l
           "color": "#282828",
           "display": "flex",
           "fontFamily": "SFUIDisplay-Regular",
-          "fontSize": 35,
+          "fontSize": 18,
           "marginBottom": 8,
         },
       ]
@@ -610,7 +610,7 @@ exports[`component >> Input Given input has variant underline Given input has la
           "color": "#282828",
           "display": "flex",
           "fontFamily": "SFUIDisplay-Regular",
-          "fontSize": 35,
+          "fontSize": 18,
           "marginBottom": 8,
         },
       ]

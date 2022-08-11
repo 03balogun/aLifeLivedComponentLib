@@ -54,7 +54,7 @@ exports[`components >> Selector Given the selector has multiple values selected 
               "color": "#282828",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 35,
+              "fontSize": 18,
               "marginBottom": 16,
             },
           ]
@@ -69,7 +69,7 @@ exports[`components >> Selector Given the selector has multiple values selected 
               "color": "#7F8183",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 31,
+              "fontSize": 16,
               "marginBottom": 8,
             },
           ]
@@ -187,7 +187,7 @@ exports[`components >> Selector Given the selector has no values selected Should
               "color": "#282828",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 35,
+              "fontSize": 18,
               "marginBottom": 16,
             },
           ]
@@ -202,7 +202,7 @@ exports[`components >> Selector Given the selector has no values selected Should
               "color": "#7F8183",
               "display": "flex",
               "fontFamily": "SFUIDisplay-Regular",
-              "fontSize": 31,
+              "fontSize": 16,
               "marginBottom": 8,
             },
           ]

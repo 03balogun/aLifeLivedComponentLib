@@ -84,7 +84,7 @@ exports[`components >> topic card  User HAS completed Should render component co
                 "color": "#282828",
                 "display": "flex",
                 "fontFamily": "SFUIDisplay-Regular",
-                "fontSize": 35,
+                "fontSize": 18,
               },
             ]
           }
@@ -247,7 +247,7 @@ exports[`components >> topic card  User has NOT completed Should render componen
                 "color": "#282828",
                 "display": "flex",
                 "fontFamily": "SFUIDisplay-Regular",
-                "fontSize": 35,
+                "fontSize": 18,
               },
             ]
           }
@@ -342,7 +342,7 @@ exports[`components >> topic card  User has NOT completed Should render componen
                   "color": "#A9ABAD",
                   "display": "flex",
                   "fontFamily": "SFUIDisplay-Regular",
-                  "fontSize": 27,
+                  "fontSize": 14,
                 },
               ]
             }

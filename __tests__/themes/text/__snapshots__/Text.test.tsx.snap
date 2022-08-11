@@ -8,7 +8,7 @@ exports[`src >> themes >> Text Body Text render Render body test correctly 1`] =
         "color": "#282828",
         "display": "flex",
         "fontFamily": "SFUIDisplay-Regular",
-        "fontSize": 35,
+        "fontSize": 18,
       },
     ]
   }
@@ -25,7 +25,7 @@ exports[`src >> themes >> Text BodySmall Text render Render BodySmall test corre
         "color": "#282828",
         "display": "flex",
         "fontFamily": "SFUIDisplay-Regular",
-        "fontSize": 31,
+        "fontSize": 16,
       },
     ]
   }
@@ -42,7 +42,7 @@ exports[`src >> themes >> Text BodyXSmall Text render Render BodyXSmall test cor
         "color": "#282828",
         "display": "flex",
         "fontFamily": "SFUIDisplay-Regular",
-        "fontSize": 27,
+        "fontSize": 14,
       },
     ]
   }
@@ -59,7 +59,7 @@ exports[`src >> themes >> Text Intro Text render Render intro test correctly 1`]
         "color": "#282828",
         "display": "flex",
         "fontFamily": "SFUIText-Semibold",
-        "fontSize": 31,
+        "fontSize": 16,
       },
     ]
   }
@@ -76,7 +76,7 @@ exports[`src >> themes >> Text h1 Text render Render h1 test correctly 1`] = `
         "color": "#282828",
         "display": "flex",
         "fontFamily": "SFUIText-Bold",
-        "fontSize": 102,
+        "fontSize": 52,
       },
     ]
   }
@@ -93,7 +93,7 @@ exports[`src >> themes >> Text h2 Text render Render h2 test correctly 1`] = `
         "color": "#282828",
         "display": "flex",
         "fontFamily": "SFUIText-Bold",
-        "fontSize": 63,
+        "fontSize": 32,
       },
     ]
   }
@@ -110,7 +110,7 @@ exports[`src >> themes >> Text h3 Text render Render h3 test correctly 1`] = `
         "color": "#282828",
         "display": "flex",
         "fontFamily": "SFUIText-Bold",
-        "fontSize": 47,
+        "fontSize": 24,
       },
     ]
   }
@@ -127,7 +127,7 @@ exports[`src >> themes >> Text h4 Text render Render h4 test correctly 1`] = `
         "color": "#282828",
         "display": "flex",
         "fontFamily": "SFUIText-Regular",
-        "fontSize": 39,
+        "fontSize": 20,
       },
     ]
   }
