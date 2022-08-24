@@ -109,7 +109,6 @@ export const StoryCard: React.FC<StoryCardProps> = ({
             variant="roundAvatar"
             width={30}
             height={30}
-            iconSize={20}
             iconWidth={30}
             iconHeight={30}
           />

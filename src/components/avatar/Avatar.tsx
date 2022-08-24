@@ -5,13 +5,11 @@ import {
   StyledImageProps,
   SystemImage,
 } from '../../themes/systemImage/SystemImage';
-import { Icon } from '../icon/Icon';
 
 type AvatarProps = {
   resizeMode?: ResizeMode;
   iconWidth?: number;
   iconHeight?: number;
-  iconSize?: number;
   source: {
     uri: string;
     priority: Priority;
@@ -24,22 +22,20 @@ export const Avatar: React.FC<AvatarProps & StyledImageProps> = ({
   variant,
   iconWidth,
   iconHeight,
-  iconSize,
   ...rest
 }) => {
   return !source.uri ? (
     <Box
-      borderWidth={1}
+      borderWidth={0}
       padding="m"
       width={iconWidth}
       height={iconHeight}
       borderRadius="xXXlarge"
       alignItems="center"
       justifyContent="center"
+      backgroundColor="primary"
       {...rest}
-    >
-      <Icon icon="user" size={iconSize} />
-    </Box>
+    />
   ) : (
     <SystemImage
       source={{
