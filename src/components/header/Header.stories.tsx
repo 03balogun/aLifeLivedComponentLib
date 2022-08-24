@@ -4,20 +4,21 @@ import { text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
 // Component
-import { DiscoverHeader } from './DiscoverHeader';
+import { Header } from './Header';
 import { Box } from '../../themes/box/Box';
 
 storiesOf('Headers', module)
   .addDecorator(Story => Story())
-  .add('Discover header', () => (
+  .add('Header', () => (
     <Box margin="m">
-      <DiscoverHeader
+      <Header
         fullName={text('Title', 'John Smith')}
         avatarUrl=""
+        iconName="bookmark"
         onAvatarPress={action('Avatar press')}
-        onSearchIconPress={action('Search icon press')}
+        onIconPress={action('Search icon press')}
         avatarTestID="avatar-test-id"
-        searchTestID="search-test-id"
+        iconTestID="icon-test-id"
       />
     </Box>
   ));

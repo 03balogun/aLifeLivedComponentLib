@@ -7,10 +7,10 @@ function loadStories() {
   require('../components/avatar/Avatar.stories');
   require('../components/button/Button.stories');
   require('../components/directionButton/DirectionButton.stories');
-  require('../components/discoverHeader/DiscoverHeader.stories');
   require('../components/draftStoryCard/DraftStoryCard.stories');
   require('../components/editAndDeleteBottomSheet/EditAndDeleteBottomSheet.stories');
   require('../components/faqCard/FaqCard.stories');
+  require('../components/header/Header.stories');
   require('../components/icon/Icon.stories');
   require('../components/input/Input.stories');
   require('../components/miniPlayer/MiniPlayer.stories');
@@ -35,10 +35,10 @@ const stories = [
   '../components/avatar/Avatar.stories',
   '../components/button/Button.stories',
   '../components/directionButton/DirectionButton.stories',
-  '../components/discoverHeader/DiscoverHeader.stories',
   '../components/draftStoryCard/DraftStoryCard.stories',
   '../components/editAndDeleteBottomSheet/EditAndDeleteBottomSheet.stories',
   '../components/faqCard/FaqCard.stories',
+  '../components/header/Header.stories',
   '../components/icon/Icon.stories',
   '../components/input/Input.stories',
   '../components/miniPlayer/MiniPlayer.stories',

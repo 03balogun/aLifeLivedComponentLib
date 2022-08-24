@@ -35,7 +35,7 @@ import { MyRecordingCard } from './components/myRecordingCard/MyRecordingCard';
 import { RecorderActionBar } from './components/recorderActionBar/RecorderActionBar';
 import { DirectionButton } from './components/directionButton/DirectionButton';
 import { FaqCard } from './components/faqCard/FaqCard';
-import { DiscoverHeader } from './components/discoverHeader/DiscoverHeader';
+import { Header } from './components/header/Header';
 
 // UI
 import { Box } from './themes/box/Box';
@@ -60,7 +60,7 @@ library.add(iconList);
 export {
   SystemAnimatableBox,
   LoadingAnimation,
-  DiscoverHeader,
+  Header,
   FaqCard,
   SystemAnimatedLottieBox,
   SystemPressable,
