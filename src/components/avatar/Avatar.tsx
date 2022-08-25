@@ -19,7 +19,7 @@ type AvatarProps = {
 export const Avatar: React.FC<AvatarProps & StyledImageProps> = ({
   source,
   resizeMode = 'cover',
-  variant,
+  variant = 'roundAvatar',
   iconWidth,
   iconHeight,
   ...rest
