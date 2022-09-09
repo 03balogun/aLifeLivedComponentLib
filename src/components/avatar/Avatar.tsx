@@ -8,8 +8,6 @@ import {
 
 type AvatarProps = {
   resizeMode?: ResizeMode;
-  iconWidth?: number;
-  iconHeight?: number;
   source: {
     uri: string;
     priority: Priority;
@@ -20,16 +18,12 @@ export const Avatar: React.FC<AvatarProps & StyledImageProps> = ({
   source,
   resizeMode = 'cover',
   variant = 'roundAvatar',
-  iconWidth,
-  iconHeight,
   ...rest
 }) => {
   return !source.uri ? (
     <Box
       borderWidth={0}
       padding="m"
-      width={iconWidth}
-      height={iconHeight}
       borderRadius="xXXlarge"
       alignItems="center"
       justifyContent="center"

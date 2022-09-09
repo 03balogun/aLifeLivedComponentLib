@@ -19,7 +19,6 @@ type StoryCardProps = {
     id: string;
     title: string;
     likes: number;
-    duration: string;
     avatar: string;
     topic: string;
   };
@@ -50,76 +49,69 @@ export const StoryCard: React.FC<StoryCardProps> = ({
         borderWidth={0.5}
         boxShadow="md"
         borderColor="borderColor"
-        paddingLeft="l"
       >
-        <Box width="80%">
-          <Box>
-            <Text variant="body" numberOfLines={1}>
-              {story.title}
-            </Text>
-          </Box>
-
-          <Box flexDirection="row" alignItems="center" marginTop="s">
-            <Box flexDirection="row" alignItems="center" width="25%">
-              <Icon icon={['far', 'clock']} color="primaryContrast" />
-              <Text variant="bodyXSmall" marginLeft="s">
-                {story.duration}
+        <Box width="100%">
+          <Box flexDirection="row" alignItems="center">
+            <Avatar
+              source={{ uri: story.avatar, priority: 'normal' }}
+              width={40}
+              height={40}
+            />
+            <Box width="80%" marginLeft="s">
+              <Text variant="body" numberOfLines={1}>
+                {story.title}
               </Text>
             </Box>
-            <Box flexDirection="row" alignItems="center" marginLeft="s">
-              <Icon
-                icon={[hasUserLikedStory ? 'fas' : 'far', 'heart']}
-                color="backgroundError"
-                onPress={onLikePress}
-                testID="story-card-heart-icon"
-              />
-              <Text variant="bodyXSmall" marginLeft="s">
-                {story.likes}
+          </Box>
+
+          <Box alignItems="center">
+            <Box
+              backgroundColor="secondary"
+              alignSelf="flex-start"
+              marginTop="s"
+              padding="xs"
+              borderRadius="medium"
+              paddingLeft="s"
+              paddingRight="s"
+            >
+              <Text
+                variant="bodyXSmall"
+                color="textContrastHigh"
+                numberOfLines={1}
+              >
+                {story.topic}
               </Text>
             </Box>
           </Box>
 
           <Box
-            backgroundColor="primary"
-            alignSelf="flex-start"
+            borderBottomWidth={1}
+            borderColor="backgroundContrastMid"
             marginTop="s"
-            padding="xs"
-            borderRadius="medium"
-            paddingLeft="s"
-            paddingRight="s"
-          >
-            <Text
-              variant="bodyXSmall"
-              color="textContrastHigh"
-              numberOfLines={1}
-            >
-              {story.topic}
-            </Text>
-          </Box>
-        </Box>
+            marginBottom="s"
+          />
 
-        <Box
-          flexDirection="row"
-          alignItems="center"
-          marginLeft="s"
-          paddingRight="m"
-        >
-          <Avatar
-            source={{ uri: story.avatar, priority: 'normal' }}
-            variant="roundAvatar"
-            width={30}
-            height={30}
-            iconWidth={30}
-            iconHeight={30}
-          />
-          <Icon
-            icon={[hasUserBookmarkedStory ? 'fas' : 'far', 'bookmark']}
-            marginLeft="m"
-            color="primaryContrast"
-            testID="story-card-bookmark-icon"
-            onPress={onBookmarkPress}
-            size={10}
-          />
+          <Box flexDirection="row" alignItems="center" marginLeft="s">
+            <SystemButton flexDirection="row" width="20%" onPress={onLikePress}>
+              <Icon
+                icon={[hasUserLikedStory ? 'fas' : 'far', 'heart']}
+                color="secondary"
+                testID="story-card-heart-icon"
+              />
+              <Text variant="bodyXSmall" marginLeft="s">
+                {story.likes}
+              </Text>
+            </SystemButton>
+
+            <SystemButton onPress={onBookmarkPress}>
+              <Icon
+                icon={[hasUserBookmarkedStory ? 'fas' : 'far', 'bookmark']}
+                marginLeft="m"
+                color="primaryContrast"
+                testID="story-card-bookmark-icon"
+              />
+            </SystemButton>
+          </Box>
         </Box>
       </Box>
     </SystemButton>

@@ -39,11 +39,7 @@ export const Header: React.FC<HeaderProps> = ({
           alignItems="center"
           onPress={onAvatarPress}
         >
-          <Avatar
-            source={{ uri: avatarUrl, priority: 'high' }}
-            iconHeight={40}
-            iconWidth={40}
-          />
+          <Avatar source={{ uri: avatarUrl, priority: 'high' }} />
         </SystemButton>
         <Box marginLeft="s" width="75%">
           <Text variant="h4" numberOfLines={1}>

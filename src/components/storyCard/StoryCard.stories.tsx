@@ -20,7 +20,7 @@ const storyData = [
     title: 'This is a longer test title hey there',
     duration: '01:00',
     likes: 1500,
-    avatar: 'https://picsum.photos/id/237/200/300',
+    avatar: '',
     topic: 'Children',
   },
   {
@@ -37,8 +37,8 @@ const storyData = [
 
 storiesOf('Cards', module)
   .addDecorator(Story => Story())
-  .add('Default story card', () => (
-    <Box flex={1} backgroundColor="white" padding="s">
+  .add('Story card', () => (
+    <Box flex={1} backgroundColor="white" margin="m">
       {storyData.map(story => (
         <StoryCard
           key={story.id}

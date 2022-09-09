@@ -44,12 +44,7 @@ export const UserCard: React.FC<UserCardProps> = ({
           alignItems="center"
           maxWidth="70%"
         >
-          <Avatar
-            iconHeight={50}
-            iconWidth={50}
-            source={{ uri: avatarUrl, priority: 'high' }}
-            variant="roundAvatar"
-          />
+          <Avatar source={{ uri: avatarUrl, priority: 'high' }} />
           <Box marginLeft="s">
             <Text variant="body" numberOfLines={1}>
               {username}

@@ -10,27 +10,8 @@ const setup = (
     uri: string;
     priority: Priority;
   },
-  variant: 'roundAvatar',
-  iconHeight = 50,
-  iconWidth = 50,
-  iconSize = 30
-) => {
-  // Screen
-  const utils = render(
-    <Avatar
-      source={source}
-      resizeMode="center"
-      variant={variant}
-      iconHeight={iconHeight}
-      iconWidth={iconWidth}
-      iconSize={iconSize}
-    />
-  );
-
-  return {
-    ...utils,
-  };
-};
+  variant: 'roundAvatar'
+) => render(<Avatar source={source} resizeMode="center" variant={variant} />);
 
 describe('components >> avatar ', () => {
   describe('Round avatar', () => {
