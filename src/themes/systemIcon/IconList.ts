@@ -34,6 +34,7 @@ import {
   faLock,
   faGlobeAmericas,
   faHeadphones,
+  faMusic,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faBookmark as farBookmark,
@@ -84,5 +85,6 @@ export const iconList = {
   faEllipsisV,
   faCog,
   faFolder,
+  faMusic,
 };
 export type Icons = keyof typeof iconList;

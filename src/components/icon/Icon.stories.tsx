@@ -26,6 +26,7 @@ storiesOf('Icon', module)
       <Icon icon={['far', 'clock']} margin="s" />
       <Icon icon={['fas', 'clock']} margin="s" />
       <Icon icon="play" margin="s" />
+      <Icon icon="music" margin="s" />
       <Icon icon="pause" margin="s" />
       <Icon icon="user" margin="s" />
       <Icon icon="headphones" margin="s" />
