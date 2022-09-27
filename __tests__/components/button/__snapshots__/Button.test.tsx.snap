@@ -19,29 +19,48 @@ exports[`components >> button  Disabled button Should render basic button correc
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "alignContent": "center",
       "backgroundColor": "#CBCBCB",
       "borderRadius": 8,
+      "justifyContent": "center",
       "opacity": 1,
       "padding": 16,
       "width": "100%",
     }
   }
 >
-  <Text
+  <View
     style={
       Array [
         Object {
-          "color": "#282828",
+          "alignContent": "center",
+          "alignItems": "center",
           "display": "flex",
-          "fontFamily": "SFUIText-Semibold",
-          "fontSize": 16,
-          "textAlign": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
         },
+        Array [
+          Object {},
+        ],
       ]
     }
   >
-    TEST BUTTON
-  </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#282828",
+            "display": "flex",
+            "fontFamily": "SFUIText-Semibold",
+            "fontSize": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      TEST BUTTON
+    </Text>
+  </View>
 </View>
 `;
 
@@ -64,29 +83,48 @@ exports[`components >> button  Enabled button Should render basic button correct
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "alignContent": "center",
       "backgroundColor": "#67B6A8",
       "borderRadius": 8,
+      "justifyContent": "center",
       "opacity": 1,
       "padding": 16,
       "width": "100%",
     }
   }
 >
-  <Text
+  <View
     style={
       Array [
         Object {
-          "color": "#282828",
+          "alignContent": "center",
+          "alignItems": "center",
           "display": "flex",
-          "fontFamily": "SFUIText-Semibold",
-          "fontSize": 16,
-          "textAlign": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
         },
+        Array [
+          Object {},
+        ],
       ]
     }
   >
-    TEST BUTTON
-  </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#282828",
+            "display": "flex",
+            "fontFamily": "SFUIText-Semibold",
+            "fontSize": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      TEST BUTTON
+    </Text>
+  </View>
 </View>
 `;
 
@@ -109,8 +147,10 @@ exports[`components >> button  Loading button Should render button in loading st
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "alignContent": "center",
       "backgroundColor": "#67B6A8",
       "borderRadius": 8,
+      "justifyContent": "center",
       "opacity": 1,
       "padding": 16,
       "width": "100%",

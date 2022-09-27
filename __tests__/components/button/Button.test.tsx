@@ -1,26 +1,30 @@
-import React from 'react';
+import React, { ReactChild } from 'react';
 import { render, fireEvent } from './../../../jest/renderUtil';
 
 // Component
 import { Button } from '../../../src/components/button/Button';
+import { Box } from '../../../src/themes/box/Box';
 
 const mockOnPress = jest.fn();
 
-const setup = ({ isDisabled = false, isLoading = false }) => {
-  // Screen
-  const utils = render(
+const setup = ({
+  isDisabled = false,
+  isLoading = false,
+  endAdornment = undefined,
+}: {
+  isLoading?: boolean;
+  isDisabled?: boolean;
+  endAdornment?: ReactChild;
+}) =>
+  render(
     <Button
       title="Test button"
       onPress={mockOnPress}
       isDisabled={isDisabled}
       isLoading={isLoading}
+      endAdornmentComponent={endAdornment}
     />
   );
-
-  return {
-    ...utils,
-  };
-};
 
 describe('components >> button ', () => {
   describe('Enabled button', () => {
@@ -76,6 +80,16 @@ describe('components >> button ', () => {
       const { getByTestId } = setup({ isDisabled: false, isLoading: true });
       fireEvent.press(getByTestId('QBYQCQ-button-spinner'));
       expect(mockOnPress).toBeCalledTimes(0);
+    });
+  });
+
+  describe('Given there is an endAdornment', () => {
+    test('Should render child on left hand side of button', () => {
+      const { getByTestId } = setup({
+        endAdornment: <Box testID="end-adornment-test-id" />,
+      });
+
+      expect(getByTestId('end-adornment-test-id')).toBeDefined();
     });
   });
 });

@@ -71,29 +71,48 @@ exports[`themes >> systemBottomSheet Should render systemBottomSheet box with no
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "alignContent": "center",
             "backgroundColor": "#ffffff",
             "borderRadius": 8,
+            "justifyContent": "center",
             "opacity": 1,
             "padding": 16,
             "width": "100%",
           }
         }
       >
-        <Text
+        <View
           style={
             Array [
               Object {
-                "color": "#282828",
+                "alignContent": "center",
+                "alignItems": "center",
                 "display": "flex",
-                "fontFamily": "SFUIText-Semibold",
-                "fontSize": 16,
-                "textAlign": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
               },
+              Array [
+                Object {},
+              ],
             ]
           }
         >
-          CLOSE
-        </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#282828",
+                  "display": "flex",
+                  "fontFamily": "SFUIText-Semibold",
+                  "fontSize": 16,
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            CLOSE
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -180,29 +199,48 @@ exports[`themes >> systemBottomSheet Should render systemBottomSheet with childr
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "alignContent": "center",
             "backgroundColor": "#ffffff",
             "borderRadius": 8,
+            "justifyContent": "center",
             "opacity": 1,
             "padding": 16,
             "width": "100%",
           }
         }
       >
-        <Text
+        <View
           style={
             Array [
               Object {
-                "color": "#282828",
+                "alignContent": "center",
+                "alignItems": "center",
                 "display": "flex",
-                "fontFamily": "SFUIText-Semibold",
-                "fontSize": 16,
-                "textAlign": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
               },
+              Array [
+                Object {},
+              ],
             ]
           }
         >
-          CLOSE
-        </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#282828",
+                  "display": "flex",
+                  "fontFamily": "SFUIText-Semibold",
+                  "fontSize": 16,
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            CLOSE
+          </Text>
+        </View>
       </View>
     </View>
   </View>

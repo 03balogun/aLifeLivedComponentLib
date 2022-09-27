@@ -7,11 +7,12 @@ import { Button } from './Button';
 import { action } from '@storybook/addon-actions';
 import { CenterView } from '../centerView/CenterView';
 import { Box } from '../../themes/box/Box';
+import { Icon } from '../icon/Icon';
 
 storiesOf('Button', module)
   .addDecorator(Story => <CenterView>{Story()}</CenterView>)
   .add('Default button', () => (
-    <Box width="100%" alignItems="center">
+    <Box alignItems="center" width="100%">
       <Box width="90%" margin="m">
         <Button
           title="Test button that has a long long title"
@@ -36,6 +37,24 @@ storiesOf('Button', module)
           onPress={action('Button on press')}
           isLoading={false}
           isDisabled={true}
+        />
+      </Box>
+      <Box width="90%" margin="m">
+        <Button
+          title="Button with adornment"
+          onPress={action('Button on press')}
+          isLoading={false}
+          isDisabled={true}
+          endAdornmentComponent={<Icon icon="play" />}
+        />
+      </Box>
+      <Box margin="m" width="50%">
+        <Button
+          title="Play all"
+          onPress={action('Button on press')}
+          isLoading={false}
+          endAdornmentComponent={<Icon color="white" icon="play" />}
+          color="white"
         />
       </Box>
     </Box>
