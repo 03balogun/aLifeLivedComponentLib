@@ -53,5 +53,9 @@ storiesOf('Icon', module)
       <Icon icon="plus-circle" margin="s" color="primary" />
       <Icon icon="globe-americas" margin="s" color="primary" />
       <Icon icon="lock" margin="s" color="primary" />
+      <Icon icon="envelope" margin="s" color="primary" />
+      <Icon icon="sliders-h" margin="s" color="primary" />
+      <Icon icon="file-contract" margin="s" color="primary" />
+      <Icon icon="long-arrow-alt-right" margin="s" color="primary" />
     </>
   ));
