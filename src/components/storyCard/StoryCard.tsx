@@ -2,6 +2,7 @@ import React from 'react';
 
 // UI
 import { Box } from '../../themes/box/Box';
+import { SystemAnimatedLottieBox } from '../../themes/systemAnimatedLottieBox/SystemAnimatedLottieBox';
 import { SystemButton } from '../../themes/systemButton/SystemButton';
 import { Text } from '../../themes/text/Text';
 import { Avatar } from '../avatar/Avatar';
@@ -11,107 +12,76 @@ import { Icon } from '../icon/Icon';
 
 type StoryCardProps = {
   onPress: () => void;
-  onBookmarkPress: () => void;
-  onLikePress: () => void;
-  hasUserLikedStory: boolean;
-  hasUserBookmarkedStory: boolean;
-  story: {
-    id: string;
-    title: string;
-    likes: number;
-    avatar: string;
-    topic: string;
-  };
+  title: string;
+  avatar: string;
+  interviewer: string;
+  isStoryPlaying: boolean;
+  testID?: string;
+  endAdornmentIconName: 'play-circle' | 'ellipsis-v';
+  onEndAdornmentPress?: () => void;
+  endAdornmentIconTestId?: string;
 };
 
 export const StoryCard: React.FC<StoryCardProps> = ({
-  story,
+  title,
+  avatar,
+  isStoryPlaying,
+  interviewer,
+  testID,
   onPress,
-  onBookmarkPress,
-  onLikePress,
-  hasUserBookmarkedStory,
-  hasUserLikedStory,
+  endAdornmentIconName,
+  onEndAdornmentPress,
+  endAdornmentIconTestId,
 }) => {
   return (
-    <SystemButton onPress={() => onPress()}>
-      <Box
-        flexDirection="row"
-        alignContent="center"
-        alignItems="center"
-        alignSelf="center"
-        justifyContent="space-between"
-        paddingBottom="s"
-        marginBottom="l"
-        backgroundColor="white"
-        marginTop="s"
-        padding="s"
-        borderRadius="medium"
-        borderWidth={0.5}
-        boxShadow="md"
-        borderColor="borderColor"
-      >
-        <Box width="100%">
-          <Box flexDirection="row" alignItems="center">
-            <Avatar
-              source={{ uri: story.avatar, priority: 'normal' }}
-              width={40}
-              height={40}
-            />
-            <Box width="80%" marginLeft="s">
-              <Text variant="body" numberOfLines={1}>
-                {story.title}
-              </Text>
-            </Box>
-          </Box>
-
-          <Box alignItems="center">
-            <Box
-              backgroundColor="secondary"
-              alignSelf="flex-start"
-              marginTop="s"
-              padding="xs"
-              borderRadius="medium"
-              paddingLeft="s"
-              paddingRight="s"
-            >
-              <Text
-                variant="bodyXSmall"
-                color="textContrastHigh"
-                numberOfLines={1}
-              >
-                {story.topic}
-              </Text>
-            </Box>
-          </Box>
-
-          <Box
-            borderBottomWidth={1}
-            borderColor="backgroundContrastMid"
-            marginTop="s"
-            marginBottom="s"
+    <SystemButton
+      testID={testID}
+      onPress={onPress}
+      backgroundColor={isStoryPlaying ? 'backgroundContrastLow' : 'white'}
+      borderRadius="medium"
+      paddingHorizontal="s"
+      paddingVertical="s"
+    >
+      <Box>
+        <Box
+          flexDirection="row"
+          alignContent="center"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <Avatar
+            source={{ uri: avatar, priority: 'normal' }}
+            width={55}
+            height={55}
           />
-
-          <Box flexDirection="row" alignItems="center" marginLeft="s">
-            <SystemButton flexDirection="row" width="20%" onPress={onLikePress}>
-              <Icon
-                icon={[hasUserLikedStory ? 'fas' : 'far', 'heart']}
-                color="secondary"
-                testID="story-card-heart-icon"
-              />
-              <Text variant="bodyXSmall" marginLeft="s">
-                {story.likes}
-              </Text>
-            </SystemButton>
-
-            <SystemButton onPress={onBookmarkPress}>
-              <Icon
-                icon={[hasUserBookmarkedStory ? 'fas' : 'far', 'bookmark']}
-                marginLeft="m"
-                color="primaryContrast"
-                testID="story-card-bookmark-icon"
-              />
-            </SystemButton>
+          <Box width="70%">
+            <Text variant="body" numberOfLines={1}>
+              {title}
+            </Text>
+            <Text variant="bodyXSmall" marginTop="xs" numberOfLines={1}>
+              {interviewer}
+            </Text>
           </Box>
+          {isStoryPlaying ? (
+            <SystemAnimatedLottieBox
+              source={require('../../assets/lottie/music-playing.json')}
+              autoPlay={true}
+              width={25}
+              height={25}
+            />
+          ) : (
+            <SystemButton
+              onPress={onEndAdornmentPress}
+              disabled={!onEndAdornmentPress}
+            >
+              <Icon
+                icon={endAdornmentIconName}
+                testID={endAdornmentIconTestId}
+                color="backgroundContrastMid"
+                size={17}
+              />
+            </SystemButton>
+          )}
         </Box>
       </Box>
     </SystemButton>

@@ -10,28 +10,25 @@ const storyData = [
   {
     id: 'test-story-one',
     title: 'Test title',
-    duration: '25:00',
-    likes: 0,
     avatar: 'https://picsum.photos/id/237/200/300',
-    topic: 'Ancestry',
+    endAdornmentIconName: 'ellipsis-v',
+    isStoryPlaying: false,
+    onEndAdornmentPress: action('End adornment pressed'),
   },
   {
     id: 'test-story-two',
     title: 'This is a longer test title hey there',
-    duration: '01:00',
-    likes: 1500,
+    isStoryPlaying: false,
     avatar: '',
-    topic: 'Children',
+    endAdornmentIconName: 'play-circle',
   },
   {
     id: 'test-story-three',
     title:
       'This is a long title story, lets make this one go for ages! Hello there. I have the high ground. Hello there again',
-    duration: '60:00',
-    likes: 15,
+    isStoryPlaying: true,
     avatar: '',
-    topic:
-      'Test a really really really long topic title that is so long it breaks',
+    endAdornmentIconName: 'play-circle',
   },
 ];
 
@@ -40,30 +37,17 @@ storiesOf('Cards', module)
   .add('Story card', () => (
     <Box flex={1} backgroundColor="white" margin="m">
       {storyData.map(story => (
-        <StoryCard
-          key={story.id}
-          story={story}
-          hasUserBookmarkedStory={false}
-          hasUserLikedStory={false}
-          onPress={action('Story card pressed')}
-          onBookmarkPress={action('Bookmark pressed')}
-          onLikePress={action('Heart pressed')}
-        />
-      ))}
-    </Box>
-  ))
-  .add('Liked and bookmarked story card', () => (
-    <Box flex={1} backgroundColor="white" padding="s">
-      {storyData.map(story => (
-        <StoryCard
-          key={story.id}
-          story={story}
-          hasUserBookmarkedStory={true}
-          hasUserLikedStory={true}
-          onPress={action('Story card pressed')}
-          onBookmarkPress={action('Bookmark pressed')}
-          onLikePress={action('Heart pressed')}
-        />
+        <Box key={story.id} marginTop="s">
+          <StoryCard
+            avatar={story.avatar}
+            title={story.title}
+            isStoryPlaying={story.isStoryPlaying}
+            interviewer="John Smith"
+            endAdornmentIconName={story.endAdornmentIconName}
+            onEndAdornmentPress={story.onEndAdornmentPress}
+            onPress={action('Story card pressed')}
+          />
+        </Box>
       ))}
     </Box>
   ));

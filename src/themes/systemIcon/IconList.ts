@@ -40,6 +40,7 @@ import {
   faEject,
   faFileContract,
   faLongArrowAltRight,
+  faPlayCircle,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faBookmark as farBookmark,
@@ -56,6 +57,8 @@ export const iconList = {
   farBookmark,
   faUsers,
   faTrashAlt,
+  faPlayCircle,
+  faPlay,
   faPencilAlt,
   farHeart,
   faLightbulb,
@@ -72,7 +75,6 @@ export const iconList = {
   faClock,
   faLock,
   faGlobeAmericas,
-  faPlay,
   faPause,
   faTimes,
   faHeart,
