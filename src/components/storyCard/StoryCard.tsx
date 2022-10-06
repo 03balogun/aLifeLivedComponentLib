@@ -17,7 +17,7 @@ type StoryCardProps = {
   interviewer: string;
   isStoryPlaying: boolean;
   testID?: string;
-  endAdornmentIconName: 'play-circle' | 'ellipsis-v';
+  endAdornmentIconName: 'play-circle' | 'ellipsis-v' | 'plus-circle';
   onEndAdornmentPress?: () => void;
   endAdornmentIconTestId?: string;
 };
