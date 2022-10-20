@@ -36,6 +36,7 @@ import { RecorderActionBar } from './components/recorderActionBar/RecorderAction
 import { DirectionButton } from './components/directionButton/DirectionButton';
 import { FaqCard } from './components/faqCard/FaqCard';
 import { Header } from './components/header/Header';
+import { MediaSlider } from './components/mediaSlider/MediaSlider';
 
 // UI
 import { Box } from './themes/box/Box';
@@ -106,4 +107,5 @@ export {
   SystemBottomSheet,
   MyRecordingCard,
   RecorderActionBar,
+  MediaSlider,
 };
