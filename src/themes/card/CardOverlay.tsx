@@ -13,16 +13,16 @@ export const CardOverlay: React.FC<CardOverlayProps> = ({ title }) => {
     <BlurLayout
       tint="dark"
       intensity={80}
-      backgroundColor="blue"
       position="absolute"
       bottom={0}
       left={0}
       right={0}
       padding="s"
-      borderRadius="large"
+      borderBottomLeftRadius="large"
+      borderBottomRightRadius="large"
       overflow="hidden"
     >
-      <Text textAlign="center" color="textContrastXXLow" variant="h4">
+      <Text textAlign="center" color="white" variant="h4">
         {title}
       </Text>
     </BlurLayout>

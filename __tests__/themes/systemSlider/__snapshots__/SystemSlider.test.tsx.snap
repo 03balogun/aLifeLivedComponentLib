@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SystemSlider Should match snapshot 1`] = `
+<RNCSlider
+  disabled={false}
+  enabled={true}
+  inverted={false}
+  maximumValue={1}
+  minimumValue={0}
+  onChange={null}
+  onRNCSliderAccessibilityAction={null}
+  onRNCSliderSlidingComplete={null}
+  onRNCSliderSlidingStart={null}
+  onRNCSliderValueChange={null}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  step={0}
+  style={
+    Array [
+      Array [
+        Object {},
+      ],
+      Object {
+        "height": 40,
+      },
+    ]
+  }
+  tapToSeek={false}
+  value={0}
+/>
+`;

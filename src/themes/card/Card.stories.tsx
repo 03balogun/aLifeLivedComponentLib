@@ -95,7 +95,10 @@ storiesOf('Cards', module)
             onPress={() => console.log('press')}
             backgroundColor="secondaryOverlay"
           >
-            <CardContent SVG={<MyStoriesSVG height={150} width={150} />} />
+            <CardContent
+              SVG={<MyStoriesSVG height={200} width={200} />}
+              paddingTop="xl"
+            />
             <CardOverlay title="School years" />
           </CardContainer>
         </Box>
@@ -120,10 +123,7 @@ storiesOf('Cards', module)
         </Box>
 
         <Box margin="s">
-          <CardContainer
-            onPress={() => console.log('press')}
-            backgroundColor="secondaryOverlay"
-          >
+          <CardContainer backgroundColor="secondaryOverlay">
             <CardContent SVG={<COVIDThemeSVG height={150} width={150} />} />
             <CardOverlay title="Sports" />
           </CardContainer>

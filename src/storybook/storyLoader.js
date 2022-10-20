@@ -13,6 +13,7 @@ function loadStories() {
   require('../components/header/Header.stories');
   require('../components/icon/Icon.stories');
   require('../components/input/Input.stories');
+  require('../components/mediaSlider/MediaSlider.stories');
   require('../components/miniPlayer/MiniPlayer.stories');
   require('../components/myRecordingCard/MyRecordingCard.stories');
   require('../components/onboardingContent/OnboardingContent.stories');
@@ -41,6 +42,7 @@ const stories = [
   '../components/header/Header.stories',
   '../components/icon/Icon.stories',
   '../components/input/Input.stories',
+  '../components/mediaSlider/MediaSlider.stories',
   '../components/miniPlayer/MiniPlayer.stories',
   '../components/myRecordingCard/MyRecordingCard.stories',
   '../components/onboardingContent/OnboardingContent.stories',

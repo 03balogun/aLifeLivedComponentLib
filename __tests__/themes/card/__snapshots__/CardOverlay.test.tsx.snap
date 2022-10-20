@@ -13,8 +13,8 @@ exports[`src >> themes >> card Should match snapshot 1`] = `
       },
       Array [
         Object {
-          "backgroundColor": "#00B5CD",
-          "borderRadius": 16,
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
           "overflow": "hidden",
           "padding": 8,
         },
@@ -43,7 +43,7 @@ exports[`src >> themes >> card Should match snapshot 1`] = `
     style={
       Array [
         Object {
-          "color": "#F1ECE5",
+          "color": "#ffffff",
           "display": "flex",
           "fontFamily": "SFUIText-Regular",
           "fontSize": 20,

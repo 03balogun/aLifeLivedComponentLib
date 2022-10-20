@@ -1,15 +1,21 @@
-import React, { ReactNode } from 'react';
+import React, { ReactElement } from 'react';
 
 // UI
-import { Box } from '../box/Box';
+import { Box, StyledBoxProps } from '../box/Box';
 
 type CardContentProps = {
-  SVG: ReactNode;
+  SVG: ReactElement;
+  props?: StyledBoxProps;
 };
 
-export const CardContent: React.FC<CardContentProps> = ({ SVG }) => {
+export const CardContent: React.FC<CardContentProps> = ({ SVG, ...props }) => {
   return (
-    <Box alignContent="center" overflow="hidden" borderRadius="large">
+    <Box
+      alignContent="center"
+      overflow="hidden"
+      borderRadius="large"
+      {...props}
+    >
       {SVG}
     </Box>
   );
