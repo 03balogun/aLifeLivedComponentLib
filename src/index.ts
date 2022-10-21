@@ -37,6 +37,7 @@ import { DirectionButton } from './components/directionButton/DirectionButton';
 import { FaqCard } from './components/faqCard/FaqCard';
 import { Header } from './components/header/Header';
 import { MediaSlider } from './components/mediaSlider/MediaSlider';
+import { MediaControls } from './components/mediaControls/MediaControls';
 
 // UI
 import { Box } from './themes/box/Box';
@@ -55,6 +56,7 @@ import { SystemBottomSheet } from './themes/systemBottomSheet/SystemBottomSheet'
 import { SystemKeyboardAvoidingView } from './themes/systemKeyboardAvoidingView/SystemKeyboardAvoidingView';
 import { SystemAnimatedLottieBox } from './themes/systemAnimatedLottieBox/SystemAnimatedLottieBox';
 import { SystemAnimatableBox } from './themes/systemAnimatableBox/SystemAnimatableBox';
+import { SystemButton } from './themes/systemButton/SystemButton';
 
 library.add(iconList);
 
@@ -108,4 +110,6 @@ export {
   MyRecordingCard,
   RecorderActionBar,
   MediaSlider,
+  SystemButton,
+  MediaControls,
 };

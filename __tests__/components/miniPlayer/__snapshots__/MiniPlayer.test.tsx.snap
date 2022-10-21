@@ -245,7 +245,9 @@ exports[`component >> miniPlayer Given mini player DISABLED and NOT PLAYING Shou
           accessible={true}
           collapsable={false}
           focusable={true}
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -253,10 +255,11 @@ exports[`component >> miniPlayer Given mini player DISABLED and NOT PLAYING Shou
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginRight": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "marginRight": 8,
+              },
+            ]
           }
         >
           <RNSVGSvgView
@@ -564,7 +567,9 @@ exports[`component >> miniPlayer Given mini player DISABLED and PLAYING Should r
           accessible={true}
           collapsable={false}
           focusable={true}
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -572,10 +577,11 @@ exports[`component >> miniPlayer Given mini player DISABLED and PLAYING Should r
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginRight": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "marginRight": 8,
+              },
+            ]
           }
         >
           <RNSVGSvgView
@@ -883,7 +889,9 @@ exports[`component >> miniPlayer Given mini player is PAUSED Should render compo
           accessible={true}
           collapsable={false}
           focusable={true}
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -891,10 +899,11 @@ exports[`component >> miniPlayer Given mini player is PAUSED Should render compo
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginRight": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "marginRight": 8,
+              },
+            ]
           }
         >
           <RNSVGSvgView
@@ -1202,7 +1211,9 @@ exports[`component >> miniPlayer Given mini player is PLAYING Should render comp
           accessible={true}
           collapsable={false}
           focusable={true}
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1210,10 +1221,11 @@ exports[`component >> miniPlayer Given mini player is PLAYING Should render comp
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginRight": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "marginRight": 8,
+              },
+            ]
           }
         >
           <RNSVGSvgView
@@ -1506,7 +1518,9 @@ exports[`component >> miniPlayer Given story has NO profile image Should render 
           accessible={true}
           collapsable={false}
           focusable={true}
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -1514,10 +1528,11 @@ exports[`component >> miniPlayer Given story has NO profile image Should render 
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "marginRight": 8,
-              "opacity": 1,
-            }
+            Array [
+              Object {
+                "marginRight": 8,
+              },
+            ]
           }
         >
           <RNSVGSvgView

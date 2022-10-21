@@ -11,6 +11,7 @@ import { SystemButton } from '../../themes/systemButton/SystemButton';
 import { BlurLayout } from '../../themes/systemBlurLayout/SystemBlurLayout';
 import { Text } from '../../themes/text/Text';
 import { useTheme } from '../../themes/hooks/useTheme';
+import { SystemPressable } from '../../themes/systemPressable/SystemPressable';
 
 type MiniPlayerTypes = {
   isDisabled: boolean;
@@ -116,7 +117,7 @@ export const MiniPlayer: React.FC<MiniPlayerTypes> = ({
                 testID="headphone-test-id"
               />
             )}
-            <SystemButton
+            <SystemPressable
               disabled={isDisabled}
               testID={mediaControlTestID}
               marginRight="s"
@@ -128,7 +129,7 @@ export const MiniPlayer: React.FC<MiniPlayerTypes> = ({
                 color="white"
                 testID="mediaControl-icon"
               />
-            </SystemButton>
+            </SystemPressable>
           </Box>
         </Box>
       </BlurLayout>

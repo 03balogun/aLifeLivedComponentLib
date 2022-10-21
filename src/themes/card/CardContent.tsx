@@ -5,17 +5,14 @@ import { Box, StyledBoxProps } from '../box/Box';
 
 type CardContentProps = {
   SVG: ReactElement;
-  props?: StyledBoxProps;
 };
 
-export const CardContent: React.FC<CardContentProps> = ({ SVG, ...props }) => {
+export const CardContent: React.FC<CardContentProps & StyledBoxProps> = ({
+  SVG,
+  ...rest
+}) => {
   return (
-    <Box
-      alignContent="center"
-      overflow="hidden"
-      borderRadius="large"
-      {...props}
-    >
+    <Box alignContent="center" overflow="hidden" borderRadius="large" {...rest}>
       {SVG}
     </Box>
   );
